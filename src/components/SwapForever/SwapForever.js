@@ -19,7 +19,6 @@ class SwapForever extends Component {
   }
 
   render() {
-    console.log(this.state);
     return (
       <div className="SwapForever">
         <ContentSwapper value={items[this.state.index]}/>

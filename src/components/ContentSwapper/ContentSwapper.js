@@ -9,13 +9,8 @@ class ContentSwapper extends Component {
     };
   }
 
-  componentDidMount() {
-    console.log(this.props);
-  }
-
   componentDidUpdate(prevProps) {
     if (prevProps.value !== this.props.value) {
-      console.log('changed')
       this.setState({changed: !this.state.changed})
     }
   }
